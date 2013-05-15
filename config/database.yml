@@ -1,0 +1,14 @@
+development: &defaults
+  adapter: postgresql
+  database: recognizer_dev
+  username: recognizer
+  password: recognizer
+  host: 127.0.0.1
+
+test:
+  <<: *defaults
+  database: recognizer_test
+
+production:
+  <<: *defaults
+  database: recognizer
