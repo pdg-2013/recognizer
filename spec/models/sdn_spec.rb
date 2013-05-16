@@ -16,8 +16,11 @@ describe Sdn do
   	it { should_not be_valid }
   end
 
-  describe "should validate the presence of uid" do
-  	before { @sdn.uid = " " }
+  describe "should validate the uniqueness of uid" do
+  	before do 
+  		sdn_with_same_uid = @sdn.dup
+      sdn_with_same_uid.save
+  	end
   	it { should_not be_valid }
   end
 
