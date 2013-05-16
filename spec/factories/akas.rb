@@ -1,12 +1,12 @@
 # Read about factories at https://github.com/thoughtbot/factory_girl
 
 FactoryGirl.define do
-  factory :address do
+  factory :aka do
     uid 1
     sdn_id 1
-    address1 "MyString"
-    city "MyString"
-    postcode "MyString"
-    country "MyString"
+    type "MyString"
+    category "MyString"
+    last_name "MyString"
+    first_name "MyString"
   end
 end

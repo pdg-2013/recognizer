@@ -2,6 +2,7 @@
 
 FactoryGirl.define do
   factory :program do
+  	sdn_id 1
     name "MyString"
   end
 end

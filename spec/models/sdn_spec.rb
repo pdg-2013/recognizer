@@ -33,4 +33,16 @@ describe Sdn do
   	before { @sdn.type = " " }
   	it { should_not be_valid }
   end
+
+  it "should have a addresses method" do
+    @sdn.should respond_to(:addresses)
+  end
+
+  it "should have a programs method" do
+    @sdn.should respond_to(:programs)
+  end
+
+  it "should have a akas method" do
+    @sdn.should respond_to(:akas)
+  end
 end
