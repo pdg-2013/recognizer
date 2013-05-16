@@ -9,6 +9,7 @@ describe Sdn do
   it { should respond_to(:first_name) }
   it { should respond_to(:last_name) }
   it { should respond_to(:type) }
+  it { should respond_to(:remarks) }
   it { should be_valid }
 
   describe "should validate the presence of uid" do
@@ -44,5 +45,9 @@ describe Sdn do
 
   it "should have a akas method" do
     @sdn.should respond_to(:akas)
+  end
+
+  it "should have a nationalities method" do
+    @sdn.should respond_to(:nationalities)
   end
 end

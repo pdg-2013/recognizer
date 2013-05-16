@@ -1,11 +1,10 @@
 # Read about factories at https://github.com/thoughtbot/factory_girl
 
 FactoryGirl.define do
-  factory :sdn do
+  factory :nationality do
+    sdn_id 1
     uid 1
-    first_name "MyString"
-    last_name "MyString"
-    type "MyString"
-    remarks "MyString"
+    country "MyString"
+    mainEntry false
   end
 end
