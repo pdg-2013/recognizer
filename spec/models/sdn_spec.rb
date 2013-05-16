@@ -50,4 +50,12 @@ describe Sdn do
   it "should have a nationalities method" do
     @sdn.should respond_to(:nationalities)
   end
+
+  it "should have a date_of_births method" do
+    @sdn.should respond_to(:date_of_births)
+  end
+
+  it "should have a date_of_births method" do
+    @sdn.should respond_to(:place_of_births)
+  end
 end
