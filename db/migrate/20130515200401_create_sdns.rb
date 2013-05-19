@@ -4,7 +4,7 @@ class CreateSdns < ActiveRecord::Migration
       t.integer :uid
       t.string :first_name
       t.string :last_name
-      t.string :type
+      t.string :sdn_type
 
       t.timestamps
     end

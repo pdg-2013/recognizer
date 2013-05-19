@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(:version => 20130516224708) do
 
   create_table "akas", :force => true do |t|
     t.integer  "uid"
-    t.string   "type"
+    t.string   "aka_type"
     t.string   "category"
     t.string   "last_name"
     t.string   "first_name"
@@ -73,10 +73,10 @@ ActiveRecord::Schema.define(:version => 20130516224708) do
     t.integer  "uid"
     t.string   "first_name"
     t.string   "last_name"
-    t.string   "type"
+    t.string   "sdn_type"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-    t.string   "remarks"
+    t.text     "remarks"
   end
 
 end
