@@ -8,54 +8,21 @@ describe Sdn do
   it { should respond_to(:uid) }
   it { should respond_to(:first_name) }
   it { should respond_to(:last_name) }
-  it { should respond_to(:type) }
+  it { should respond_to(:sdn_type) }
   it { should respond_to(:remarks) }
+
+  it { should have_many(:addresses) }
+  it { should have_many(:programs) }
+  it { should have_many(:akas) }
+  it { should have_many(:nationalities) }
+  it { should have_many(:date_of_births) }
+  it { should have_many(:place_of_births) }
+
+  it { should validate_presence_of(:uid) }
+  it { should validate_uniqueness_of(:uid) }
+  
+  it { should validate_presence_of(:last_name) }
+  it { should validate_presence_of(:sdn_type) }
+
   it { should be_valid }
-
-  describe "should validate the presence of uid" do
-  	before { @sdn.uid = " " }
-  	it { should_not be_valid }
-  end
-
-  describe "should validate the uniqueness of uid" do
-  	before do 
-  		sdn_with_same_uid = @sdn.dup
-      sdn_with_same_uid.save
-  	end
-  	it { should_not be_valid }
-  end
-
-  describe "should validate the presence of last_name" do
-  	before { @sdn.last_name = " " }
-  	it { should_not be_valid }
-  end
-
-  describe "should validate the presence of type" do
-  	before { @sdn.type = " " }
-  	it { should_not be_valid }
-  end
-
-  it "should have a addresses method" do
-    @sdn.should respond_to(:addresses)
-  end
-
-  it "should have a programs method" do
-    @sdn.should respond_to(:programs)
-  end
-
-  it "should have a akas method" do
-    @sdn.should respond_to(:akas)
-  end
-
-  it "should have a nationalities method" do
-    @sdn.should respond_to(:nationalities)
-  end
-
-  it "should have a date_of_births method" do
-    @sdn.should respond_to(:date_of_births)
-  end
-
-  it "should have a date_of_births method" do
-    @sdn.should respond_to(:place_of_births)
-  end
 end

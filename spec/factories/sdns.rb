@@ -5,7 +5,7 @@ FactoryGirl.define do
     uid 1
     first_name "MyString"
     last_name "MyString"
-    type "MyString"
+    sdn_type "MyString"
     remarks "MyString"
   end
 end

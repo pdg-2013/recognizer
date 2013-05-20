@@ -184,6 +184,6 @@ DEPENDENCIES
   rails (= 3.2.13)
   rspec-rails (= 2.11.0)
   sass-rails (~> 3.2.5)
-  shoulda-matchers
+  shoulda-matchers (= 2.1.0)
   therubyracer
   uglifier (= 1.2.3)

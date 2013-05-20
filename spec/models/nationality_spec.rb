@@ -9,5 +9,13 @@ describe Nationality do
   it { should respond_to(:sdn_id) }
   it { should respond_to(:country) }
   it { should respond_to(:mainEntry) }
+
+  it { should belong_to(:sdn) }
+
+  it { should validate_presence_of(:uid) }
+  it { should validate_presence_of(:sdn_id) }
+  it { should validate_presence_of(:country) }
+  it "should validate the presence of mainEntry"
+
   it { should be_valid }
 end

@@ -2,14 +2,14 @@ require 'spec_helper'
 
 describe Program do
   before { @program = FactoryGirl.build(:program) }
-
   subject { @program }
 
   it { should respond_to(:name) }
-  it { should be_valid }
+  it { should respond_to(:sdn_id) }
 
-  describe "should validate the presence of name" do
-  	before { @program.name = " " }
-  	it { should_not be_valid }
-  end
+  it { should belong_to(:sdn) }
+
+  it { should validate_presence_of(:name) }
+  
+  it { should be_valid }
 end

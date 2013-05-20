@@ -4,7 +4,7 @@ FactoryGirl.define do
   factory :aka do
     uid 1
     sdn_id 1
-    type "MyString"
+    aka_type "MyString"
     category "MyString"
     last_name "MyString"
     first_name "MyString"
