@@ -1,7 +1,7 @@
 class CreateDateOfBirths < ActiveRecord::Migration
   def change
     create_table :date_of_births do |t|
-      t.boolean :mainEntry
+      t.boolean :main_entry
       t.integer :uid
       t.string :date
       t.integer :sdn_id

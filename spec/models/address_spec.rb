@@ -15,7 +15,6 @@ describe Address do
   it { should belong_to(:sdn) }
 
   it { should validate_presence_of(:uid) }
-  it { should validate_presence_of(:sdn_id) }
   it { should validate_presence_of(:country) }
 
   it { should be_valid }

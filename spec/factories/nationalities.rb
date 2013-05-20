@@ -5,6 +5,6 @@ FactoryGirl.define do
     sdn_id 1
     uid 1
     country "MyString"
-    mainEntry false
+    main_entry false
   end
 end

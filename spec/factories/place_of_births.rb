@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :place_of_birth do
-    mainEntry true
+    main_entry true
     uid 1
     place "MyString"
     sdn_id 1

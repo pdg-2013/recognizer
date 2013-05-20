@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(:version => 20130516224708) do
   end
 
   create_table "date_of_births", :force => true do |t|
-    t.boolean  "mainEntry"
+    t.boolean  "main_entry"
     t.integer  "uid"
     t.string   "date"
     t.integer  "sdn_id"
@@ -48,13 +48,13 @@ ActiveRecord::Schema.define(:version => 20130516224708) do
     t.integer  "sdn_id"
     t.integer  "uid"
     t.string   "country"
-    t.boolean  "mainEntry"
+    t.boolean  "main_entry"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
   create_table "place_of_births", :force => true do |t|
-    t.boolean  "mainEntry"
+    t.boolean  "main_entry"
     t.integer  "uid"
     t.string   "place"
     t.integer  "sdn_id"

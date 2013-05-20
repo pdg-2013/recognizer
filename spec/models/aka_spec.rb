@@ -15,7 +15,6 @@ describe Aka do
   it { should belong_to(:sdn) }
 
   it { should validate_presence_of(:uid) }
-  it { should validate_presence_of(:sdn_id) }
   it { should validate_presence_of(:aka_type) }
   it { should validate_presence_of(:last_name) }
   it { should validate_presence_of(:category) }

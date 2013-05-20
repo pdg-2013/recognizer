@@ -26,19 +26,44 @@ class Sdn < ActiveRecord::Base
       xml.tag!(:remarks, self.remarks)
       xml.programList do
         self.programs.each do |program|
-          # :name
           xml.tag!(:program, program.name)
-        end
+        end 
       end
       xml.addressList do
         xml.address do
-          self.addresses.each do |address|
-            # :address1, :city, :country, :postcode, :uid
-            xml.tag!(:uid, address.uid)
-            xml.tag!(:address1, address.address1)
-            xml.tag!(:city, address.city)
-            xml.tag!(:country, address.country)
-            xml.tag!(:postcode, address.postcode)
+          self.addresses.each do |unit|
+            xml.tag!(:uid, unit.uid)
+            xml.tag!(:address1, unit.address1)
+            xml.tag!(:city, unit.city)
+            xml.tag!(:country, unit.country)
+            xml.tag!(:postcode, unit.postcode)
+          end
+        end
+      end
+      xml.placeOfBirthList do
+        self.place_of_births.each do |unit|
+          xml.placeOfBirthItem do
+            xml.tag!(:uid, unit.uid)
+            xml.tag!(:placeOfBirth, unit.place)
+            xml.tag!(:mainEntry, unit.main_entry)
+          end
+        end
+      end
+      xml.nationalityList do
+        self.nationalities.each do |unit|
+          xml.nationality do
+            xml.tag!(:uid, unit.uid)
+            xml.tag!(:country, unit.country)
+            xml.tag!(:mainEntry, unit.main_entry)
+          end
+        end
+      end
+      xml.dateOfBirthList do
+        self.date_of_births.each do |unit|
+          xml.dateOfBirthItem do
+            xml.tag!(:uid, unit.uid)
+            xml.tag!(:dateOfBirth, unit.date)
+            xml.tag!(:mainEntry, unit.main_entry)
           end
         end
       end

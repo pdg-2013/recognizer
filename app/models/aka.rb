@@ -4,7 +4,6 @@ class Aka < ActiveRecord::Base
   belongs_to :sdn
 
   validates :uid, presence: true
-  validates :sdn_id, presence: true
   validates :last_name, presence: true
   validates :aka_type, presence: true
   validates :category, presence: true

@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :date_of_birth do
-    mainEntry false
+    main_entry false
     uid 1
     date "MyString"
     sdn_id 1
