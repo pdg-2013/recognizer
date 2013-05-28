@@ -4,8 +4,10 @@ gem "rails", "3.2.13"
 gem "mechanize", "~> 2.6.0"
 
 gem "jquery-rails", "2.0.2"
-gem "bootstrap-sass", "2.1"
 gem "therubyracer"
+gem "therubyracer"
+gem "less-rails"
+gem "twitter-bootstrap-rails"
 
 group :assets do
   gem "sass-rails", "~> 3.2.5"

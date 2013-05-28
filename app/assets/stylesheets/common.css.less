@@ -1,0 +1,60 @@
+@import "twitter/bootstrap/sprites.less";
+
+body {
+  padding-top: 75px;
+  background: #f6f8f8;
+  color: #4C4C4C;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  line-height: 25px
+  
+}
+
+a, a:visited { 
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+}
+
+a:hover, a:active { 
+  color: #5BC4C2;
+}
+
+/* Navbar */
+
+@navbarHeight: 55px;
+@navbarBackgroundHighlight: #446CB3;
+@navbarInverseBackground: #446CB3;
+
+@navbarInverseBackground:                #446CB3;
+@navbarInverseBackgroundHighlight:       #446CB3;
+@navbarInverseBorder:                    #446CB3;
+
+@navbarInverseText:                      @white;
+@navbarInverseLinkColor:                 @white;
+@navbarInverseLinkColorHover:            #446CB3;
+@navbarInverseLinkColorActive:           @navbarInverseLinkColorHover;
+@navbarInverseLinkBackgroundHover:       @white;
+@navbarInverseLinkBackgroundActive:      @white;
+
+.navbar .nav {
+  border-left: 1px solid rgba(255, 255, 255, 0.11);
+  box-shadow: -1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.navbar-inverse .brand, .navbar-inverse .nav > li > a {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 0 0 rgba(255, 255, 255, 0.11);
+}
+
+
+
+
+.loading {
+  width: 32px;
+  height: 32px;
+  background: url("loader.gif");
+  margin-left: 614px;
+  margin-top: 200px;
+}

@@ -1,4 +1,6 @@
 Recognizer::Application.routes.draw do
+
+  root :to => 'application#index'
   get "ofac/sdn"
 
   # The priority is based upon order of creation:
